@@ -13,4 +13,155 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font);
+  font-variation-settings: "wght" var(--card-text-thickness);
+  background-image: var(--grid-gradient);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header {
+  display: flex;
+  width: var(--block-width);
+  margin: auto;
+  margin-block-end: 100px;
+  min-height: 370px;
+  border: solid 1px #000;
+  box-sizing: border-box;
+  margin-block-start: 100px;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.logo {
+  font-family: var(--accent-font);
+}
+
+.mein_logo {
+  font-size: clamp(49px, 5vw, 65px);
+  /* margin-block-end: 15px; */
+}
+
+.accent_logo {
+  font-size: clamp(14px, 2vw, 23px);
+  font-weight: 400;
+}
+
+.section {
+  display: grid;
+  width: var(--block-width);
+  margin: auto;
+  margin-block-end: 50px;
+  border: solid 2px #000;
+  background-color: #fff;
+}
+
+.title_text {
+  font-family: var(--main-font);
+  font-variation-settings: "wght" var(--card-header-thickness);
+  font-size: 18px;
+  vertical-align: middle;
+  line-height: 100%;
+  -webkit-leading-trim: none;
+  margin: 4px 10px;
+}
+
+.text {
+  margin: 25px;
+}
+
+.text_content {
+  font-family: var(--main-font);
+  font-variation-settings: "wght" var(--card-text-thickness);
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.button {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  justify-self: end;
+  margin-block-end: 25px;
+  margin-inline-end: 25px;
+  gap: 5px;
+}
+
+.card__like-button {
+  min-width: 130px;
+  min-height: 38px;
+}
+
+.text .text_content:first-child {
+  margin-block-end: 25px;
+}
+
+.card__icon-button {
+  background-color: #fff;
+  border: none;
+}
+.like-icon {
+  width: 27px;
+  height: 24px;
+}
+
+.button__text {
+  font-family: var(--accent-font);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.container_img {
+  position: relative;
+}
+
+.decorative_teg {
+  position: absolute;
+  top: 28px;
+  right: 25px;
+  font-family: var(--accent-font);
+  font-size: 14px;
+  width: 400;
+  opacity: 0.5;
+  mix-blend-mode: hard-light;
+  text-shadow: 1px 0 0 var(--outline-color), -1px 0 0 var(--outline-color),
+    0 1px 0 var(--outline-color), 0 -1px 0 var(--outline-color),
+    1px 1px 0 var(--outline-color), -1px -1px 0 var(--outline-color),
+    1px -1px 0 var(--outline-color), -1px 1px 0 var(--outline-color);
+  /* -webkit-text-stroke: 1px #fff; */
+}
+
+/* @supports (
+  (-webkit-text-stroke: 1px var(--outline-color)) or
+    (-moz-text-stroke: 1px var(--outline-color))
+) {
+  .decorative_teg {
+    -webkit-text-stroke: 1px var(--outline-color); /* веб-обводка текст
+    -moz-text-stroke: 1px var(--outline-color);
+  }
+} */
+
+/* Fallback-решение через text-shadow */
+/* @supports not (
+  (-webkit-text-stroke: 1px var(--outline-color)) or
+    (-moz-text-stroke: 1px var(--outline-color))
+) {
+  .decorative_teg {
+    text-shadow: 1px 0 0 var(--outline-color), -1px 0 0 var(--outline-color),
+      0 1px 0 var(--outline-color), 0 -1px 0 var(--outline-color),
+      1px 1px 0 var(--outline-color), -1px -1px 0 var(--outline-color),
+      1px -1px 0 var(--outline-color), -1px 1px 0 var(--outline-color);
+  }
+} */
+
+.memori_img {
+  width: 100%;
+  height: 100%;
+}
+
+.button_save {
+  display: block;
+  margin: auto;
 }
