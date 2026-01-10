@@ -9,3 +9,219 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+
+/* @keyframes scaleHeart {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.like-icon.is-liked .heart {
+  animation: scaleHeart 0.3s 0.1s ease-in forwards; 
+}
+
+@keyframes sparkFlash {
+  0% {
+    fill: transparent;
+  }
+  50% {
+    fill: var(--animation-fill-color);
+  }
+  100% {
+    fill: transparent;
+  }
+}
+
+.like-icon.is-liked.sparks.is-liked {
+  animation: sparkFlash 0.3s ease-in 0.3s 1 forwards;
+} */
+
+/* .like-icon.is-liked {
+  animation: combinedLikeAnimation 1.1s forwards; /* Общая длительность */
+
+/* 
+@keyframes combinedLikeAnimation {
+  0% {
+    .heart {
+      transform: scale(1);
+    }
+    .core {
+      fill: transparent;
+    }
+    .main-body {
+      fill: transparent;
+    }
+    .contour {
+      fill: transparent;
+    }
+    .sparks {
+      opacity: 0;
+    }
+  }
+  20% {
+    .heart {
+      transform: scale(1.1);
+    }
+    .like-icon.is-liked .core {
+      fill: var(--animation-fill-color);
+    }
+  }
+
+  40% {
+    .heart {
+      transform: scale(1.15);
+    }
+    .like-icon.is-liked .main-body {
+      fill: var(--animation-fill-color);
+    }
+  }
+
+  60% {
+    .heart {
+      transform: scale(1.2);
+    }
+    .like-icon.is-liked .contour {
+      fill: var(--animation-fill-color);
+    }
+  }
+
+  90% {
+    .heart {
+      transform: scale(1.25);
+    }
+    .like-icon.is-liked .sparks {
+      fill: var(--animation-fill-color);
+    } 
+  }
+
+  100% {
+    .heart {
+      transform: scale(1);
+    }
+    .like-icon.is-liked .sparks {
+      opacity: 0;
+    } 
+  }
+}  */
+
+/* Общая анимация */
+.like-icon.is-liked {
+  animation: combinedLikeAnimation 1.1s forwards;
+}
+
+@keyframes combinedLikeAnimation {
+  /* 0–20%: Увеличение сердца */
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.1);
+  }
+
+  /* 20–40%: Дальнейшее увеличение */
+  40% {
+    transform: scale(1.15);
+  }
+
+  /* 40–60%: Ещё большее увеличение */
+  60% {
+    transform: scale(1.2);
+  }
+
+  /* 60–90%: Максимальное увеличение */
+  90% {
+    transform: scale(1.25);
+  }
+
+  /* 90–100%: Возвращение к исходному масштабу */
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Анимация заливки сердцевины (core) */
+.like-icon.is-liked .core {
+  animation: fillCore 1.1s forwards;
+}
+
+@keyframes fillCore {
+  0% {
+    fill: transparent;
+  }
+  20% {
+    fill: var(--animation-fill-color);
+  }
+  100% {
+    fill: var(--animation-fill-color);
+  }
+}
+
+/* Анимация заливки основного тела (main-body) */
+.like-icon.is-liked .main-body {
+  animation: fillMainBody 1.1s forwards;
+}
+
+@keyframes fillMainBody {
+  0% {
+    fill: transparent;
+  }
+  40% {
+    fill: var(--animation-fill-color);
+  }
+  100% {
+    fill: var(--animation-fill-color);
+  }
+}
+
+/* Анимация заливки контура (contour) */
+.like-icon.is-liked .contour {
+  animation: fillContour 1.1s forwards;
+}
+
+@keyframes fillContour {
+  0% {
+    fill: transparent;
+  }
+  60% {
+    fill: var(--animation-fill-color);
+  }
+  100% {
+    fill: var(--animation-fill-color);
+  }
+}
+
+/* Анимация появления искр */
+.like-icon.is-liked .sparks {
+  animation: appearSparks 1.1s forwards;
+}
+
+@keyframes appearSparks {
+  0% {
+    fill: transparent;
+  }
+  90% {
+    fill: var(--animation-fill-color);
+  }
+  100% {
+    fill: transparent;
+  }
+}
+
+/* .like-icon.is-liked .core {
+  fill: var(--animation-fill-color);
+}
+.like-icon.is-liked .main-body {
+  fill: var(--animation-fill-color);
+}
+.like-icon.is-liked .contour {
+  fill: var(--animation-fill-color);
+}
+.like-icon.is-liked .sparks {
+  fill: var(--animation-fill-color);
+} */
