@@ -2,8 +2,8 @@
 :root {
   --main-font: "Inter", sans-serif;
   --accent-font: "PressStart2P-Regular", monospace, sans-serif;
-  --card-text-thickness: 410; /* Толщина основного текста карточки */
-  --card-header-thickness: 715; /* Толщина заголовка карточки */
+  --card-text-thickness: 410;
+  --card-header-thickness: 715;
   --outline-color: #fff;
   --text-color: black;
   --hover-text-color: white;
