@@ -42,7 +42,7 @@
   font-family: var(--accent-font);
 }
 
-.mein_logo {
+.main_logo {
   font-size: clamp(49px, 5vw, 65px);
 }
 
@@ -66,7 +66,6 @@
   font-size: 18px;
   vertical-align: middle;
   line-height: 100%;
-  -webkit-leading-trim: none;
   margin: 4px 10px;
 }
 
@@ -106,7 +105,6 @@
 
 .card__icon-button {
   background-color: inherit;
-  border: none;
   border: 2px solid transparent;
   transition: border-color 0.3s ease;
   box-sizing: border-box;
@@ -132,16 +130,14 @@
   max-height: 696px;
 }
 
-.decorative_teg {
+.decorative_tag {
   position: absolute;
   top: 28px;
   right: 25px;
   font-family: var(--accent-font);
   font-size: 14px;
-  width: 400;
   opacity: 0.5;
   mix-blend-mode: hard-light;
-  -webkit-text-stroke: 1px #fff;
   z-index: 2;
 }
 
@@ -149,7 +145,7 @@
   (-webkit-text-stroke: 1px var(--outline-color)) or
     (-moz-text-stroke: 1px var(--outline-color))
 ) {
-  .decorative_teg {
+  .decorative_tag {
     -webkit-text-stroke: 1px var(--outline-color);
     -moz-text-stroke: 1px var(--outline-color);
   }
@@ -159,7 +155,7 @@
   (-webkit-text-stroke: 1px var(--outline-color)) or
     (-moz-text-stroke: 1px var(--outline-color))
 ) {
-  .decorative_teg {
+  .decorative_tag {
     text-shadow: 1px 0 0 var(--outline-color), -1px 0 0 var(--outline-color),
       0 1px 0 var(--outline-color), 0 -1px 0 var(--outline-color),
       1px 1px 0 var(--outline-color), -1px -1px 0 var(--outline-color),
@@ -204,6 +200,10 @@ dialog[open] {
 }
 
 dialog[open]::backdrop {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+dialog[open]::-webkit-backdrop {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
