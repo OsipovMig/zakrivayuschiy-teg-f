@@ -3,9 +3,9 @@
   font-family: "Inter";
   src: local("Inter"), url("./Inter-Variable.woff2") format("woff2-variations"),
     url("./Inter-Variable.woff2") format("woff2");
-  font-weight: 400 785;
-  font-stretch: normal;
-  font-style: normal;
+  font-weight: 400 785; /* или 100 900 */
+  font-stretch: 85% 115%; /* если поддерживается */
+  font-style: oblique 0deg 12deg; /* если поддерживается */
   font-display: swap;
 }
 
