@@ -94,6 +94,8 @@
   justify-self: end;
   margin-block-end: 25px;
   margin-inline-end: 25px;
+  gap: 3px;
+
   cursor: pointer;
 }
 
@@ -116,6 +118,7 @@
   overflow: visible;
   cursor: pointer;
   height: 38px;
+  padding: 0;
 }
 
 .like-icon {
