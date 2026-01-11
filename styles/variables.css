@@ -1,7 +1,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --main-font: "Inter", sans-serif;
-  --accent-font: "PressStart2P-Regular", monospace, sans-serif;
+  --main-font: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --accent-font: "PressStart2P", "Pixelify Sans", monospace;
   --card-text-thickness: 410;
   --card-header-thickness: 715;
   --outline-color: #fff;

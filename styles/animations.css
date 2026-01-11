@@ -39,54 +39,6 @@
   }
 }
 
-.like-icon.is-liked .core {
-  animation: fillCore 1.1s forwards;
-}
-
-@keyframes fillCore {
-  0% {
-    fill: transparent;
-  }
-  20% {
-    fill: var(--animation-fill-color);
-  }
-  100% {
-    fill: var(--animation-fill-color);
-  }
-}
-
-.like-icon.is-liked .main-body {
-  animation: fillMainBody 1.1s forwards;
-}
-
-@keyframes fillMainBody {
-  0% {
-    fill: transparent;
-  }
-  40% {
-    fill: var(--animation-fill-color);
-  }
-  100% {
-    fill: var(--animation-fill-color);
-  }
-}
-
-.like-icon.is-liked .contour {
-  animation: fillContour 1.1s forwards;
-}
-
-@keyframes fillContour {
-  0% {
-    fill: transparent;
-  }
-  60% {
-    fill: var(--animation-fill-color);
-  }
-  100% {
-    fill: var(--animation-fill-color);
-  }
-}
-
 .like-icon.is-liked .sparks {
   animation: appearSparks 1.1s forwards;
 }
