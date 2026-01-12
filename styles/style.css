@@ -202,9 +202,9 @@ dialog[open] {
   grid-template-columns: min-content 1fr;
   margin: 0;
   position: fixed;
-  padding: 30px;
+  padding: 30px 40px;
   place-items: center;
-  gap: 20px;
+  gap: 16px;
   width: 353px;
   height: 191px;
   transform: translate(-50%, -50%);
@@ -241,8 +241,8 @@ dialog[open]::-webkit-backdrop {
   grid-column: 1 / -1;
   grid-row: 2 / 3;
   margin-top: 10px;
-  width: 293px;
-  height: 38px;
+  width: 100%;
+  height: 100%;
   border: solid 2px #000;
   background-color: inherit;
   cursor: pointer;
@@ -358,7 +358,7 @@ dialog[open]::-webkit-backdrop {
 }
 
 .sparks {
-  fill: transparent;
+  opacity: 0;
 }
 
 .contour {
@@ -396,19 +396,17 @@ dialog[open]::-webkit-backdrop {
   transition: fill 0.3s linear 0.05s;
 }
 
-.like-icon:active .contour {
-  fill: var(--contour-color);
-  transition: fill 0.3s linear 0.06s;
-}
-
 .like-icon.is-liked .core {
   fill: var(--animation-fill-color);
+  transition: fill 0.3s linear 0s;
 }
 
 .like-icon.is-liked .main-body {
   fill: var(--animation-fill-color);
+  transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon.is-liked .contour {
   fill: var(--animation-fill-color);
+  transition: fill 0.3s linear 0.06s;
 }
