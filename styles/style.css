@@ -71,7 +71,7 @@
   font-size: 18px;
   vertical-align: middle;
   line-height: 100%;
-  margin: 4px 10px;
+  padding: 6px 10px;
 }
 
 .text {
@@ -202,7 +202,7 @@ dialog[open] {
   grid-template-columns: min-content 1fr;
   margin: 0;
   position: fixed;
-  padding: 30px 40px;
+  padding: 30px;
   place-items: center;
   gap: 16px;
   width: 353px;
@@ -212,7 +212,7 @@ dialog[open] {
   top: 50%;
   left: 50%;
   z-index: 1000;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 dialog[open]::backdrop {
@@ -229,7 +229,7 @@ dialog[open]::-webkit-backdrop {
 }
 
 .dialog_text {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), "Pixelify Sans", monospace;
   grid-area: 1 / 2 / span 1 / span 1;
   font-weight: 400;
   font-size: 14px;
@@ -255,6 +255,9 @@ dialog[open]::-webkit-backdrop {
   }
   .title_text {
     line-height: 121%;
+  }
+  dialog[open] {
+    padding: 30px 40px;
   }
   .button_save {
     display: grid;
